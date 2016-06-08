@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+
+
+<head>
+	<title>United Airlines United Wi-Fi | Non Whitelist</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate, private">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<link rel="shortcut icon" href="assets/web/icon/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="assets/web/css/liveTV.style.css">
+<script src="assets/web/js/libs/liveTV.modernizr.js"></script>
+<script src="assets/web/js/libs/liveTV.jquery.js"></script>
+<script src="assets/web/js/libs/liveTV.cookie.js"></script>
+<script type="text/javascript" src="assets/fonts/bsj3pzo-1362092523.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--[if !IE]><!--><script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script><!--<![endif]-->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	
+</head>
+<body>
+
+
+	                          
+		<header class="headerBg">
+			   <section class="headerWrapper">      
+				
+				
+
+
+<div class="logoWrapper">
+	<a href="/home/;jsessionid=96D736AD8D856D4504CEA513C7446BD4">
+              <img src="/web/localized/en/cms-assets/unitedLogo_211x40.jpg"  alt="United Airlines Logo" />
+        </a>
+</div>
+ 	
+				
+				
+								
+				
+
+ 
+
+
+
+
+
+<ul class="userInfo">
+	
+	
+	<li><a href="#" onclick="getAccessDetails()"> 
+				
+									
+								 Hi, Anuruddha
+				
+			<span class="arrowIcon"></span>
+	</a></li>
+	<li><a href="#" onclick="getAccessDetails()"
+		class="userControlIcon"></a></li>
+</ul>
+
+<div id="myAccountFlyOut">
+	<a href="#" class="nameDropDown"> 
+			
+								
+								 Hi, Anuruddha
+			
+		<span class="arrowIcon"></span>
+	</a>
+	<section id="accessDetails"></section>
+</div> 
+
+	
+				
+								
+				
+
+ 
+
+
+
+<!-- Premium/Core with tracker bar div -->
+<section id="trackerBar" class="withTrackerBar" style="display: none">
+    <!-- Add class to div based on coverage message -->
+    <div id="withTrackerBar" class="premiumConnected">
+        <!-- Coverage or Plan Name message -->
+        <p><span id="planTextWithBar"></span>&nbsp;<span id="pausedWithPrePlanText">Paused</span>
+        </p>
+        <!-- In case of out of coverage -->
+        <a id="premiumWithTrackerFAQ" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" title="FAQ" target="_blank">
+            View FAQs</a>
+        <!-- Progress Bar -->
+        <p id="progressBar" class="progressBar">
+            <span>Progress Now</span>
+        </p>
+        <!-- Usage -->
+        <p class="dataUsage"><span id="blockUsage"></span>&nbsp;/
+            <span id="totalUsage"></span></p>
+        <!-- pause/resume do-nut -->
+        <div id="waitanimation" class="lazyWait" style="display: none">
+            <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+            <span class="waitanimationtext">Pausing&hellip;&hellip;</span>
+        </div>
+        <!-- Pause button -->
+        <a id="pausePreWithTracker" href="#" title="Pause">Pause</a>
+        <!-- Resume button -->
+        <a class="green" id="resumePreWithTracker" href="#" title="Resume">Resume</a>
+    </div>
+</section>
+
+<!-- Premium/Core without tracker bar div -->
+<section id="trackerBar" class="withoutTrackerBar" style="display: none">
+    <!-- Add class to div based on coverage message -->
+    <div id="withoutTrackerBar" class="premiumConnected">
+        <!-- Coverage or Plan Name message -->
+        <p id="planTextWithoutBar"></p>
+        <!-- In case of out of coverage -->
+        <a id="premiumWithOutTrackerFAQ" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" title="FAQ" target="_blank">
+            View FAQs</a>
+        <!-- Paused Plan Name Message-->
+        <p id="pausedWithoutPrePlanText">Paused</p>
+        <!-- pause/resume do-nut -->
+        <div id="waitanimation" class="lazyWait" style="display: none">
+            <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+            <span class="waitanimationtext">Pausing&hellip;&hellip;</span>
+        </div>
+        <!-- Pause/Resume button -->
+        <a id="pausePreWithoutTracker" href="#" title="Pause">Pause</a>
+        <!-- Resume button -->
+        <a class="green" id="resumePreWithoutTracker" href="#" title="Resume">Resume</a>
+        <!-- Upgrade button -->
+        <a id="upgradeCoreWithoutTracker" href="/home/plans/" title="Purchase a higher level of Wi-Fi service">Purchase a higher level of Wi-Fi service</a>
+    </div>
+</section>
+
+<!-- Extreme WITH tracker bar div -->
+<section id="trackerBar" class="extremeTrackerBar" style="display: none">
+    <!-- Add class to div based on coverage message -->
+    <div id="extremeTrackerBar" class="premiumConnected">
+        <!-- Coverage or Plan Name message -->
+        <p><span id="planTextExtreme"></span>&nbsp;<span id="pausedWithExtPlanText">Paused</span>
+        </p>
+        <a id="extremeWithTrackerFAQ" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" title="FAQ" target="_blank">
+            View FAQs</a>
+        <!-- pause/resume do-nut -->
+        <div id="waitanimation" class="lazyWait" style="display: none">
+            <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+            <span class="waitanimationtext">Pausing&hellip;</span>
+        </div>
+        <!-- Currency, Amount and Usage texts-->
+        <p class="dataUsage"><span id="currencyAmount"></span>&nbsp;&nbsp;<span id="billUsage"></span> Used
+        </p>
+        <!-- End button -->
+        <a id="endWithTracker"  href="javascript:void(0);" title="End plan">
+            End plan
+        </a>
+        <!-- pause/resume do-nut -->
+        <div id="waitanimation" class="lazyWait" style="display: none">
+            <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+            <span class="waitanimationtext">Pausing&hellip;&hellip;</span>
+        </div>
+        <!-- Pause button -->
+        <a id="pauseExtWithTracker" href="#" title="Pause">Pause</a>
+        <!-- Resume button -->
+        <a class="green" id="resumeExtWithTracker" href="#" title="Resume">Resume</a>
+
+    </div>
+</section>
+
+<!-- Extreme WITHOUT tracker bar div -->
+<section id="trackerBar" class="extremeWithoutTrackerBar" style="display: none">
+    <!-- Add class to div based on coverage message -->
+    <div id="extremeWithoutTrackerBar" class="premiumConnected">
+        <!-- Coverage or Plan Name message -->
+        <p><span id="planTextExtremeWithout"></span>&nbsp;
+         <!-- Paused Plan Name Message-->
+         <span id="pausedWithoutExtPlanText">Paused</span></p>
+        <a id="extremeWithOutTrackerFAQ" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" title="FAQ" target="_blank">
+            View FAQs</a>
+    
+      
+            <!-- End button -->
+        <a id="endWithoutTracker"  href="javascript:void(0);" title="End plan">
+            End plan
+        </a>
+        <!-- pause/resume do-nut -->
+        <div id="waitanimation" class="lazyWait" style="display: none">
+            <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+            <span class="waitanimationtext">Pausing&hellip;&hellip;</span>
+        </div>
+        <!-- Pause button -->
+        <a id="pauseExtWithoutTracker" href="#" title="Pause">Pause</a>
+        <!-- Resume button -->
+        <a class="green" id="resumeExtWithoutTracker" href="#" title="Resume">Resume</a>
+
+    </div>
+</section>
+
+<!-- Acclerated/Surf plan WITH usage bar -->
+<section id="trackerBar" class="superUserWithUsageBarClass" style="display: none">
+    <!-- Add class to div based on coverage message -->
+    <div id="superUserWithUsageBarId" class="superuserConnected">
+        <!-- Coverage or Plan Name message -->
+        <p><span id="superPlanTextWithBar"></span>&nbsp;<span id="pausedWithSuperPlantext">
+            Paused</span>
+        </p>
+        <!-- In case of out of coverage -->
+        <a id="superWithUsageFAQ" class="textLink" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" title="FAQ" target="_blank">
+            View FAQs
+        </a>
+        <!-- Upgrade button -->
+        <a id="upgradeSurfWithTracker" href="/home/plans/" title="Purchase a higher level of Wi-Fi service">Purchase a higher level of Wi-Fi service</a>
+        <div class="usageDisplay">
+            <!-- pause/resume do-nut -->
+            <div id="waitanimation" class="lazyWait" style="display: none">
+                <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+                <span class="waitanimationtext">Pausing&hellip;&hellip;</span>
+            </div>
+            <p id="dataUsageText" class="timeRemain">
+                <span id="hours"></span>
+                h
+                <span id="minutes"></span>
+                m
+                <span id="left">
+                    left
+                </span>
+                <span id="consumed">
+                    consumed
+                </span>
+            </p>
+            <a href="#">
+                <p id="pauseSuperWithTracker" class="planStatus">
+                    Pause
+                </p>
+                <p id="resumeSuperWithTracker" class="planStatus">
+                    Resume
+                </p>
+            </a>
+        </div>              
+    </div>
+</section>
+
+
+
+
+<!-- Acclerated/Surf plan WITHOUT usage bar -->
+<section id="trackerBar" class="superUserWithoutUsageBarClass" style="display: none">
+    <!-- Add class to div based on coverage message -->
+    <div id="superUserWithoutUsageBarId" class="superuserConnected">
+        <!-- Coverage or Plan Name message -->
+        <p><span id="superPlanTextWithoutBar"></span>&nbsp;<span id="pausedWithoutSuperPlantext">
+            Paused</span>
+        </p>
+        <!-- In case of out of coverage -->
+        <a id="superWithoutUsageFAQ" class="textLink" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" title="FAQ" target="_blank">
+            View FAQs
+        </a>
+        <!-- Upgrade button -->
+        <a id="upgradeSurfWithoutTracker" href="/home/plans/" title="Purchase a higher level of Wi-Fi service">Purchase a higher level of Wi-Fi service</a>
+        <div class="usageDisplay">
+            <!-- pause/resume do-nut -->
+            <div id="waitanimation" class="lazyWait" style="display: none">
+                <img src="../assets/web/images/loading_animation.gif" alt="loading"/>
+                <span class="waitanimationtext">Pausing&hellip;&hellip;</span>
+            </div>
+            <a href="#">
+                <p id="pauseSuperWithoutTracker" class="planStatus">
+                    Pause
+                </p>
+                <p id="resumeSuperWithoutTracker" class="planStatus">
+                    Resume
+                </p>
+            </a>
+        </div>              
+    </div>
+</section>
+<input id="faqUrl" type="hidden" value="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4?#" />
+
+<div id="alertDialog" style="display: none">
+    <h3 id="messageTitle" class="modalHeader"></h3>
+    <a href="javascript:void(0);" id="closeSwapModal" class="closeModal">Close</a>
+    <!--Value CLOSE will be retrieved from the resource bundle of portal-->
+    <div id="swapDevice">
+        <p id="messagePlaceHolder"></p>
+        <a href="javascript:void();" class="btnLink noLinkModal">Close</a>
+    </div>
+</div> 
+
+	
+								
+				
+				
+
+ 
+
+
+
+
+<script>
+	var notificationDingSwitch = false;
+</script>
+
+<div id="youAreConnectedMessageNot" style="display: none">
+		You are connected
+</div>
+<!-- notification out of coverage -->
+<section id="notOutCoverage" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+    	<span class="notificationIcon"></span>
+        <p class="alert">
+        	<strong id="grpNotMsg"></strong>
+            <span class="view">Posted&nbsp;<strong id="broadcastDate"></strong></span>
+        </p>
+        <p class="alerttext">
+        <a id="viewFaqUrl" href="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4" title="FAQ" target="_blank">
+        	View FAQs</a>
+        </p>
+        <a id="closeOutOfCoverageNot" href="javascript:void(0);" class="close align">
+          	Close
+        </a>
+    </div>
+</section>
+
+<!-- notification out of coverage without plan-->
+<section id="notOutCoverage_WP" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+    	<span class="notificationIcon"></span>
+        <p class="alert">
+        	<strong id="grpNotMsg_WP"></strong>
+            <span class="view">Posted&nbsp;<strong id="broadcastDate_WP"></strong></span>
+        </p>
+        <p class="alerttext">
+        <a href="/home/plans/;jsessionid=96D736AD8D856D4504CEA513C7446BD4" title="Get Wi-Fi">
+           Get Wi-Fi</a>
+        </p>
+        <a id="closeOutOfCoverage_WPNot" href="javascript:void(0);" class="close align">
+          	Close
+        </a>
+    </div>
+</section>
+  
+<input type="hidden" value="/home/plans/" id="upgradeUrl"/>
+<input type="hidden" value="Get plan" id="exceededLabel"/>
+
+<!-- notification overlay premium -->
+<section id="notPremium" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+    	<span class="notificationIcon"></span>
+        <p class="alert">
+        	You used&nbsp;<strong id="dataUsed"></strong>&nbsp;of your&nbsp;<strong id="dataAllocated"></strong></p>
+        <p class="alerttext">
+        <a id="notPremiumExceeded" href="javascript:callRefill('/home/plans/upgradePlan.htm?pid=4924');" title="Get more">Get more</a>
+		</p>
+        <a id="closePremiumNot" href="javascript:void(0);" class="close">
+          	Close
+        </a>
+    </div>
+</section>
+  
+<!-- notification overlay extreme -->
+<section id="notExtreme" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+    	<span class="notificationIcon"></span>
+        <p class="alert">
+        	You are approaching&nbsp;
+            <!-- Currency and Amount -->
+            <strong id="usageCost"></strong>&nbsp;
+            of use
+        </p>
+        <!--<p class="alerttext">We are authorizing you for $40.00</p>-->
+        <a id="closeExtremeNot" href="javascript:void(0);" class="close">
+        	Close
+        </a>
+    </div>
+</section>
+
+<!--  1.2B change: notification overlay Acclerated -->
+<section id="notSuperUser" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+		<span class="notificationIcon"></span>
+        <p class="alert">
+        	You used
+        	<!-- display of used hours and minutes -->
+			<strong id="usedHours"></strong>
+        	h
+        	<strong id="usedMinutes"></strong>
+        	m
+        	of your
+        	<!-- display of total hours and minutes -->
+        	<strong id="totalHours"></strong>
+        	h
+        	<strong id="totalMinutes"></strong>
+        	m
+        </p>
+        <p class="alerttext">
+        <a id="notSuperExceeded" href="javascript:callRefill('/home/plans/upgradePlan.htm?pid=4924');" title="Get more">Get more</a>
+		</p>
+        <a id="closeSuperUserNot" href="javascript:void(0);" class="close">
+        	Close
+        </a>
+    </div>
+</section>
+
+<!-- notification overlay switch extreme -->
+<section id="notSwitchExtreme" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+    	<span class="notificationIcon"></span>
+        <p class="alert">
+        	You used your remaining credits
+        </p>
+        <p class="alerttext">
+        	You were auto-switched to UnitedWi-fi.
+		</p>
+        <a id="closeSwitchExtremeNot" href="javascript:void(0);" class="close">
+        	Close
+        </a>
+    </div>
+</section>
+
+<!-- throttling notifications -->
+<section id="notThrottling" class="notifi_trackerBar" style="display: none">
+	<div class="innerNotifi_trackerBar">
+    	<span class="notificationIcon"></span>
+        <p class="alert">
+        	<strong id="throttlingNotMsg"></strong>
+            <span class="view">Posted&nbsp;<strong id="throttlingBroadcastDate"></strong></span>
+        </p>
+        <p class="alerttext">
+        <a id="ctaUrl" href="" title="" target="_blank">
+        </a>
+        </p>
+        <a id="closeThrottlingNot" href="javascript:void(0);" class="close align">
+          	Close
+        </a>
+    </div>
+</section>
+
+<input id="completeCtaUrl" type="hidden" value="" />
+<input id="faqUrl" type="hidden" value="/global/faq.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4" />
+<div id="audioBeepDiv" style="display: none"></div>
+<div id="approachingOOC" style="display: none">
+	Approaching out of coverage area
+</div>
+<div id="notificationId" style="display: none"></div>
+<div id="newNotificationMsg" style="display: none">
+	(!) New notification
+</div> 
+
+					
+				
+				
+				
+
+ 
+
+
+<div id="outOfCoverageMessage" style="display: none">
+	Out of coverage
+</div>
+<div id="youAreConnectedMessage" style="display: none">
+	You are connected
+</div>
+<div id="switchPremiumToExtreme" style="display: none">
+	You used your remaining credits
+</div>
+
+
+<!-- Start Error messages for PAUSE/RESUME transitional activities -->
+<div id="pauseInitFailed" style="display: none">
+	Your request for pause has failed. Please try later.
+</div>
+<div id="pauseTimeout" style="display: none">
+	Your request for pause has failed. Please try later.
+</div>
+<div id="resumeInitFailed" style="display: none">
+	Your request for resume has failed. Please try later.
+</div>
+<div id="resumeTimeout" style="display: none">
+	Your request for resume has failed. Please try later.
+</div>
+<div id="pauseCallbackError" style="display: none">
+	Pause failed
+</div>
+<div id="resumeCallbackError" style="display: none">
+	Resume failed
+</div>
+<div id="errorDialogTitle" style="display: none">
+	Oops!
+</div>
+<!-- End Error messages for PAUSE/RESUME transitional activities -->
+
+<!-- Start PAUSE/RESUME donut messages -->
+<div id="pausingdonuttext" style="display: none">
+	Pausing&hellip;
+</div>
+<div id="resumingdonuttext" style="display: none">
+	Resuming&hellip;
+</div>
+<!-- End PAUSE/RESUME donut messages -->
+ 
+
+									
+				
+			</section>
+		</header>    
+				
+				
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav id="topNav" class="topNavBar">
+
+
+
+<ul
+    >
+
+    
+        <li
+            
+            
+            >
+
+             
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <a
+                    
+                    
+                    title="Home"
+                    href='/home/;jsessionid=96D736AD8D856D4504CEA513C7446BD4'
+                    target="_self">Home</a>
+                
+            
+
+        </li>
+    
+        <li
+            
+            
+            >
+
+             
+                
+                    
+                    
+                    
+                        
+                    
+                
+                <a
+                    
+                    
+                    title="My destination"
+                    href='/travel/;jsessionid=96D736AD8D856D4504CEA513C7446BD4'
+                    target="_self">My destination</a>
+                
+                    <div id="moreTxt_nav">More</div>
+                
+            
+
+        </li>
+    
+        <li
+            
+            
+            >
+
+             
+                
+                    
+                    
+                        
+                    
+                    
+                
+                <a
+                    
+                    
+                    
+                    href="#" 
+                    onclick="submitLink('http://www.united.com','_blank', 'TRUE')"
+                    
+                
+                    title="united.com"
+                    href='http://www.united.com'
+                    target="">united.com</a>
+                
+                    <div id="moreTxt_nav">More</div>
+                
+            
+
+        </li>
+    
+</ul>
+<script>
+        // Set the available categories to be used by liveTV.main.js
+        var availableCategories = "false";
+</script>
+
+
+
+    </nav>
+
+ 
+
+   									
+				
+		    
+	
+
+	
+	<div id="mainContent" class="errorBg clearfix">
+        
+        
+        
+        
+        
+        
+        
+		
+		<section id="globalContainer">
+			<section id="errorPageContentArea">
+				<h1><span></span></h1>
+				
+				
+					<p>The requested page is not available with complimentary access to United Wi-Fi. Consider purchasing Internet service for access to this page.</p>
+				
+				
+					<a href="/home/plans/planSelectionPage.htm;jsessionid=96D736AD8D856D4504CEA513C7446BD4" class="btnLink" alt="View plans">View plans</a>
+				
+				
+			</section>			
+		</section>
+	</div>
+	<!-- Display Footer only if user is logged in -->
+		
+	<!-- libs -->
+
+<script src="assets/web/js/libs/liveTV.thickbox.js"></script>
+
+<script src="assets/web/js/libs/liveTV.tools.js"></script> 
+<script src="assets/web/js/libs/liveTV.tinyscrollbar.js"></script>
+<script src="assets/web/js/libs/liveTV.validate.js"></script>
+<script src="assets/web/js/libs/liveTV.jcarousellite.js"></script>
+<script src="assets/web/js/libs/liveTV.flexslider.js"></script>
+<script src="assets/web/js/libs/liveTV.placeholder.js"></script>
+<script src="assets/web/js/libs/liveTV.uniform.js"></script>
+<script src="assets/web/js/libs/liveTV.lazyload.js"></script>
+<!--[if lt IE 9]>
+<script src="assets/web/js/libs/liveTV.roundedcorner.js"></script>
+<script src="assets/web/js/libs/liveTV.respond.js"></script>
+<![endif]-->             
+<!-- custom JS files -->
+<script src="assets/web/js/liveTV.config.js"></script>
+<script src="assets/web/js/liveTV.helper.js"></script>
+<script src="assets/web/js/liveTV.main.js"></script>
+
+
+<script src="assets/web/js/liveTV.notification.js"></script>
+<script src="assets/web/js/liveTV.flightimebar.js"></script>
+<script src="assets/web/js/liveTV.trackerbar.js"></script>
+<script src="assets/web/js/liveTV.notificationoverlay.js"></script>
+<script src="assets/web/js/liveTV.travel.js"></script>
+
+
+
+<script src="assets/web/js/liveTV.ajax.js"></script>
+<script src="assets/web/js/liveTV.application.js"></script>
+<script src="assets/web/js/libs/liveTV.titlealert.js"></script>
+<script src="assets/web/js/liveTV.pasbrowser.js"></script>
+<script src="assets/web/js/liveTV.pss.js"></script>
+</body>
