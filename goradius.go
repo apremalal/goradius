@@ -163,7 +163,7 @@ func (a *AuthenticatorT) createRequest(auth, uname, encpass, nasId []byte) []byt
 	binary.Write(buf, binary.BigEndian, int8(len(encpass)+2))
 	buf.Write(encpass)
 	if len(nasId) > 0 {
-		binary.Write(buf, binary.BigEndian, int8(5))
+		binary.Write(buf, binary.BigEndian, int8(4))
 		binary.Write(buf, binary.BigEndian, int8(len(nasId)+2))
 		buf.Write(nasId)
 	}
